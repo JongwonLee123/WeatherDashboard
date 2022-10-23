@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <section class = "row">
+            <h1 class="col-12">Weather DashBoard</h1>
+        </section>
+    </header>
+    
+    <main class="container-fluid">
+        <section class="row d-flex flex-nowrap">
+            <section class="col-4 d-flex flex-column align-items-center px-1 customLeftArea" id="leftBarContainer">
+                <h2 class="search">Search for a City:</h2>
+                <input type="text" placeholder="Enter a city" id="inputValue" class="my-1">
+                <input type="submit" value="Search" id="button" class="my-1">
+                <hr class="my-2">
+            </section>
+
+            <section class="px-1 customRightArea" id="results">
+                <section id="currentWeather" class="d-flex flex-column align-items-center">
+                    <h2 class="text-center"><span id="cityName"></span>:</h2>
+
+                    <div class="card custom-card custom-card my-3 px-1" style="width: 18rem;">
+                        <div class="card-body p-1">
+                            <h5 class="card-title my-1" id="currentDate"></h5>
+                            <img id="weatherIcon">
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperature"></li>
+                            <li class="list-group-item p-1" id="humidity"></li>
+                            <li class="list-group-item p-1" id="wind"></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="d-flex flex-row justify-content-around flex-wrap" id="fivedays">
+
+                    <div class="card custom-card my-2 px-1" style="width: 18rem;">
+
+                        <div class="card-body p-1">
+                            <h5 class="card-title" id="dateElement0"></h5>
+                            <img id="iconElement0">
+                        </div>
+          
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperatureElement0"></li>
+                            <li class="list-group-item p-1" id="humidityElement0"></li>
+                            <li class="list-group-item p-1" id="windElement0"></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="card custom-card my-2 px-1" style="width: 18rem;">
+
+                        <div class="card-body p-1">
+                            <h5 class="card-title" id="dateElement1"></h5>
+                            <img id="iconElement1">
+                        </div>
+          
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperatureElement1"></li>
+                            <li class="list-group-item p-1" id="humidityElement1"></li>
+                            <li class="list-group-item p-1" id="windElement1"></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="card custom-card my-2 px-1" style="width: 18rem;">
+
+                        <div class="card-body p-1">
+                            <h5 class="card-title" id="dateElement2"></h5>
+                            <img id="iconElement2">
+                        </div>
+          
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperatureElement2"></li>
+                            <li class="list-group-item p-1" id="humidityElement2"></li>
+                            <li class="list-group-item p-1" id="windElement2"></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="card custom-card my-2 px-1" style="width: 18rem;">
+
+                        <div class="card-body p-1">
+                            <h5 class="card-title" id="dateElement3"></h5>
+                            <img id="iconElement3">
+                        </div>
+          
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperatureElement3"></li>
+                            <li class="list-group-item p-1" id="humidityElement3"></li>
+                            <li class="list-group-item p-1" id="windElement3"></li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="card custom-card my-2 px-1" style="width: 18rem;">
+
+                        <div class="card-body p-1">
+                            <h5 class="card-title" id="dateElement4"></h5>
+                            <img id="iconElement4">
+                        </div>
+          
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-1" id="temperatureElement4"></li>
+                            <li class="list-group-item p-1" id="humidityElement4"></li>
+                            <li class="list-group-item p-1" id="windElement4"></li>
+                        </ul>
+                        
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>Made by @ Jongwon Lee 2022</footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
