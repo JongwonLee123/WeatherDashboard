@@ -7,3 +7,5 @@ In order to call this data, the OpenWeather API was used by fetching from two di
 For the CSS and styling used on the website, bootstrap was mainly used to create a nice format. 
 
 The javascript file contains the a local storage, which saves past cities that were searched before. There are three functions used to get data for the index.html. The getConditions is able to collect the cities coordinates and current conditions, which is updated through renderCurrent. RenderForecast is implemented after getting the latitude and longitude of the city and the data collected is updated onto the index.html file. 
+
+![weatherdashboard](https://user-images.githubusercontent.com/48977323/197663657-4493fd17-19de-4e42-a58a-e897d50f30cb.png)
